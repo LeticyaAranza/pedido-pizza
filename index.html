@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Pedido de Pizza</title>
+</head>
+<body>
+
+    <img src="https://www.godubrovnik.com/wp-content/uploads/pizza.jpg" alt="Pizza" width="500">
+    
+    <h1>Formulário de Pedido de Pizza</h1>
+    <p>Preencha seus dados e escolha seu pedido!</p>
+
+    <h2>Dados do cliente</h2>
+
+    <br><label for="nome">Nome:</label><br>
+    <input type="text" name="nome" id="nome" required><br>
+
+    <br><label for="email">Email:</label><br>
+    <input type="email" name="email" id="email" required><br>
+
+    <br><label for="telefone">Telefone:</label><br>
+    <input type="tel" name="telefone" id="telefone" required><br>
+
+    <br><label for="observação">Observações:</label><br>
+    <textarea name="observações" id="observações">Digite aqui!</textarea><br>
+
+    <h2>Pedido da pizza:</h2>
+
+    <h3>Tamanho da pizza:</h3>
+
+    <input type="radio" name="tam" id="grande"> <label for="Grande">Grande</label>
+    <br><input type="radio" name="tam" id="media"> <label for="Media">Media</label>
+    <br><input type="radio" name="tam" id="pequena"> <label for="Pequena">Pequena</label>
+
+    <h3>Sabores: <span style="font-weight: normal;">(Pode escolher mais de um!)</span></h3>
+                <!--serve para deixar a letra em fonte normal dentro do codigo-->
+    <input type="checkbox" name="Sabores" id="Margherita"> <label for="Margherita">Margherita</label>
+    <br><input type="checkbox" name="Sabores" id="Calabresa"> <label for="Calabresa">Calabresa</label>
+    <br><input type="checkbox" name="Sabores" id="Portuguesa"> <label for="Portuguesa">Portuguesa</label>
+    <br><input type="checkbox" name="Sabores" id="Quatro Queijos"> <label for="Quatro Queijos">Quatro Queijos</label>
+    <br><input type="checkbox" name="Sabores" id="Frango com catupiry"> <label for="Frango com catupiry">Frango com catupiry</label>
+
+    <h3>Borda recheada?</h3>
+
+    <input type="radio" name="rec" id="Sim"> <label for="Sim">Sim</label>
+    <br><input type="radio" name="rec" id="Não"> <label for="Não">Não</label>
+
+    <h3>Bebida:</h3>
+
+    <select name="bebida" id="">bebida>
+    <option value="Nenhum">Nenhum</option>
+    <option value="Refrigerante">Refrigerante</option>
+    <option value="Agua">Agua</option>
+    <option value="Suco">Suco</option>
+    <option value="Bebida alcoolica">Bebida alcoólica</option>
+    </select>
+
+    <p>Instruções para a entrega:</p>
+    <textarea name="texto" id="texto">Digite aqui!</textarea><br><br>
+
+    <form onsubmit="alert('Pedido enviado com sucesso!'); return false;">
+        <input type="submit" value="Enviar Pedido">
+      </form>
+<!--Fazer o botao e a confirmação-->      
+
+
+
+</body>
+</html>
